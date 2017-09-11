@@ -1,4 +1,4 @@
-# Calculator v 2
+# Calculator v 3
 
 This is my solution for the simple Calculator exercise, with the
 added code to retain the state of the result displayed on the screen
