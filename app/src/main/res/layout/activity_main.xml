@@ -51,7 +51,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:onClick="multNums""
+        android:onClick="multNums"
         android:text="@string/mult" />
     <Button
         style="@style/buttons.alt"
