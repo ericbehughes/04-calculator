@@ -1,5 +1,7 @@
 package campbell.ca.hw;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,7 +19,12 @@ import android.widget.TextView;
  * This version maintains state for the result
  *
  * @author PMCampbell
- * @version 2
+ * @version 4
+ *
+ * Changes:
+ *  add french strings & image for UI (no changes to code)
+ *  make the image a button that launches google maps (as lab 4)
+ *  remove inline string for result 
  *
  **/
 public class MainActivity extends AppCompatActivity {
@@ -115,6 +122,28 @@ public class MainActivity extends AppCompatActivity {
         if (result != null)
             result.setText(strResult);
         Log.d(TAG, "onRestoreInstanceState() result:"+strResult);
+
+    }
+
+    /**
+     * Button for image, launches activity that
+     * has an intent-filter that responds to
+     *  implicit intent:  view + geo uri
+     * @param v
+     */
+    public void showMap(View v) {
+
+        String country = getResources().getString(R.string.country);
+        Uri  geoLocation = Uri.parse("geo:0,0?q=" + Uri.encode(country));
+
+        Intent geoIntent = new Intent(Intent.ACTION_VIEW);
+
+        geoIntent.setData(geoLocation);
+        if (geoIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(geoIntent);
+        } else {
+            result.setText(R.string.error_no_geo);
+        }
 
     }
 }

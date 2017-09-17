@@ -1,16 +1,10 @@
-# Calculator v 3
+# Calculator v 4
 
-This is my solution for the simple Calculator exercise, with the
-* added code xml for styles
-* added code to retain the state of the result displayed on the screen
-* added Logging of the two state methods & the result
-* added an image to the bottom of the calculator
+This is my solution for the simple Calculator exercise, see Version 3,2,1 for gradual implementation of android features
 
-result is in a TextView so it is the programmer's responsibility to save
-and restore it as needed
+## V 4 changes:
 
-override 
-onSaveInstanceState()
-and
-onRestoreInstanceState()
-
+* added strings and images to support French (alternate resources)
+* changed the ImageView to an ImageButton
+  - added method to fire implicit intent: Action view + geo Uri data
+* moved the inline string for result to strngs.xml
