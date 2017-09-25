@@ -136,13 +136,14 @@ public class MainActivity extends AppCompatActivity {
         String country = getResources().getString(R.string.country);
         Uri  geoLocation = Uri.parse("geo:0,0?q=" + Uri.encode(country));
 
+        // build intent
         Intent geoIntent = new Intent(this, MapActivity.class);
-
         geoIntent.setData(geoLocation);
         if (geoIntent.resolveActivity(getPackageManager()) != null) {
+            // send data to new activity
             geoIntent.putExtra("countryInfo", country);
             geoIntent.putExtra("geoLocation", geoLocation.toString());
-
+            //launch new activity
             startActivity(geoIntent);
         } else {
             result.setText(R.string.error_no_geo);

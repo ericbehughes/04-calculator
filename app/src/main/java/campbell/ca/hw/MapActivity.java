@@ -26,22 +26,15 @@ public class MapActivity extends AppCompatActivity {
     }
 
     public void openMaps(View v) {
-
-        //Uri uri = Uri.parse(getIntent().getExtras().getString("geoLocation"));
-        //mapsUri = Uri.parse(getIntent().getExtras().getString("geoLocation"));
-
+        // get geo location from previous intent
         mapsUri = Uri.parse(getIntent().getExtras().getString("geoLocation"));
-
+        //build intent with geo info
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapsUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
+
+        // launch maps
         startActivity(mapIntent);
 
-//        Uri gmmIntentUri = Uri.parse("geo:37.7749,-122.4194");
-//        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-//        //mapIntent.setPackage("com.google.android.apps.maps");
-//        mapIntent.setData(gmmIntentUri);
-//
-//            startActivity(mapIntent);
+
 
     }
 }
