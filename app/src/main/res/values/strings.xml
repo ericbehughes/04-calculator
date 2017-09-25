@@ -1,8 +1,18 @@
 <resources>
-    <string name="app_name">Lab5 Maps</string>
-    <string name="enter_address">Enter an address</string>
-    <string name="submit_button">Submit</string>
-    <string name="country">CAN</string>
-    <string name="result_initial">The answer will be displayed here</string>
-    <string name="error_no_geo">No geo location info for that location</string>
+
+    <string name="add">Add</string>
+    <string name="subtr">Subtract</string>
+    <string name="mult">Multiply</string>
+    <string name="div">Divide</string>
+    <string name="enter_hint">Enter a number</string>
+
+    <string name="title_activity_map">MapActivity</string>
+
+        <string name="app_name">Lab5 Maps</string>
+        <string name="enter_address">Enter an address</string>
+        <string name="submit_button">Submit</string>
+        <string name="country">CAN</string>
+        <string name="result_initial">The answer will be displayed here</string>
+        <string name="error_no_geo">No geo location info for that location</string>
+
 </resources>

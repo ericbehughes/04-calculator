@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="add">Ajouter</string>
+    <string name="div">Diviser</string>
+    <string name="enter_hint">Entrez un numéro</string>
+    <string name="mult">Multiplier</string>
+    <string name="subtr">Soustraire</string>
     <string name="app_name">Lab5 Map</string>
     <string name="enter_address">Entrez un addresse</string>
     <string name="submit_button">Soumettre</string>
