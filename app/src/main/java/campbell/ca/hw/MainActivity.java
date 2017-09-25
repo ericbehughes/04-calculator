@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
         geoIntent.setData(geoLocation);
         if (geoIntent.resolveActivity(getPackageManager()) != null) {
             geoIntent.putExtra("countryInfo", country);
+            geoIntent.putExtra("geoLocation", geoLocation.toString());
 
             startActivity(geoIntent);
         } else {

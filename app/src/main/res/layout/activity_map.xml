@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:onClick="getGeoLocationInfo"
+            android:onClick="openMaps"
             android:text="@string/submit_button" />
     </LinearLayout>
 

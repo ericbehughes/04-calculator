@@ -11,7 +11,7 @@
         <string name="app_name">Lab5 Maps</string>
         <string name="enter_address">Enter an address</string>
         <string name="submit_button">Submit</string>
-        <string name="country">CAN</string>
+        <string name="country">CA</string>
         <string name="result_initial">The answer will be displayed here</string>
         <string name="error_no_geo">No geo location info for that location</string>
 
