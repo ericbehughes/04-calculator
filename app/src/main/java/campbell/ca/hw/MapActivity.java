@@ -17,7 +17,7 @@ public class MapActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         EditText enterGeoLocationET = (EditText) findViewById(R.id.enterGeoLocationET);
         toolbar.setTitle("Lab5");
-        enterGeoLocationET.setText(savedInstanceState.getString("countryInfo").toString());
+        enterGeoLocationET.setText(getIntent().getExtras().getString("countryInfo"));
         setSupportActionBar(toolbar);
 
 
