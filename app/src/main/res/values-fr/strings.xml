@@ -12,4 +12,5 @@
     <string name="country">France</string>
     <string name="result_initial">La réponse s\'affichera ici</string>
     <string name="error_no_geo">Aucune action définie pour l\'intent geo</string>
+    <string name="search_google">Recherchez</string>
 </resources>

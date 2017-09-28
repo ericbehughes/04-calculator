@@ -32,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
-            android:inputType="numberDecimal"
+            
             android:textColorHint="@color/colorAccent"
             android:text="@string/enter_address" />
 
@@ -58,6 +58,45 @@
             android:layout_height="wrap_content"
 
             android:onClick="openMaps"
+            android:text="@string/submit_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/googleSearchTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="@string/result_initial"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/enterGoogleSearchET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+
+            android:textColorHint="@color/colorAccent"
+            android:text="@string/search_google" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/submitGoogleSeachBtn"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="searchGoogleClick"
             android:text="@string/submit_button" />
     </LinearLayout>
 

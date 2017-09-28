@@ -1,5 +1,6 @@
 package campbell.ca.hw;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -36,5 +37,14 @@ public class MapActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void searchGoogleClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_SEARCH);
+        String query = ((EditText) findViewById(R.id.enterGoogleSearchET)).getText().toString();
+        intent.putExtra(SearchManager.QUERY, query);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }
